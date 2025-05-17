@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoctorDashboardApp.Views.PatientDetailsPage"
+             Title="Patient Details">
+
+    <ScrollView>
+        <Grid RowDefinitions="Auto,*"
+              Padding="20">
+
+            <!-- Header Section -->
+            <Grid Grid.Row="0"
+                  ColumnDefinitions="*,Auto"
+                  Margin="0,0,0,20">
+                <VerticalStackLayout Grid.Column="0">
+                    <Label Text="{Binding Patient.FullName}"
+                           Style="{StaticResource HeaderLabel}"/>
+                    <Label Text="{Binding Patient.DateOfBirth, StringFormat='DOB: {0:d}'}"
+                           Style="{StaticResource BodyLabel}"/>
+                </VerticalStackLayout>
+                <Button Grid.Column="1"
+                        Text="Edit"
+                        Command="{Binding EditCommand}"
+                        Style="{StaticResource PrimaryButton}"/>
+            </Grid>
+
+            <!-- Patient Information -->
+            <VerticalStackLayout Grid.Row="1" Spacing="20">
+                <!-- Basic Information -->
+                <Frame Style="{StaticResource CardStyle}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Basic Information"
+                               Style="{StaticResource SubHeaderLabel}"/>
+                        <Grid ColumnDefinitions="Auto,*" RowSpacing="10">
+                            <Label Grid.Row="0" Grid.Column="0" Text="Gender:" Style="{StaticResource BodyLabel}"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Patient.Gender}" Style="{StaticResource BodyLabel}"/>
+                            
+                            <Label Grid.Row="1" Grid.Column="0" Text="Phone:" Style="{StaticResource BodyLabel}"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Patient.PhoneNumber}" Style="{StaticResource BodyLabel}"/>
+                            
+                            <Label Grid.Row="2" Grid.Column="0" Text="Email:" Style="{StaticResource BodyLabel}"/>
+                            <Label Grid.Row="2" Grid.Column="1" Text="{Binding Patient.Email}" Style="{StaticResource BodyLabel}"/>
+                            
+                            <Label Grid.Row="3" Grid.Column="0" Text="Address:" Style="{StaticResource BodyLabel}"/>
+                            <Label Grid.Row="3" Grid.Column="1" Text="{Binding Patient.Address}" Style="{StaticResource BodyLabel}"/>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Medical Information -->
+                <Frame Style="{StaticResource CardStyle}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Medical Information"
+                               Style="{StaticResource SubHeaderLabel}"/>
+                        <Grid ColumnDefinitions="Auto,*" RowSpacing="10">
+                            <Label Grid.Row="0" Grid.Column="0" Text="Blood Type:" Style="{StaticResource BodyLabel}"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Patient.BloodType}" Style="{StaticResource BodyLabel}"/>
+                            
+                            <Label Grid.Row="1" Grid.Column="0" Text="Allergies:" Style="{StaticResource BodyLabel}"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Patient.Allergies}" Style="{StaticResource BodyLabel}"/>
+                            
+                            <Label Grid.Row="2" Grid.Column="0" Text="Current Medications:" Style="{StaticResource BodyLabel}"/>
+                            <Label Grid.Row="2" Grid.Column="1" Text="{Binding Patient.CurrentMedications}" Style="{StaticResource BodyLabel}"/>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Medical History -->
+                <Frame Style="{StaticResource CardStyle}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Medical History"
+                               Style="{StaticResource SubHeaderLabel}"/>
+                        <Label Text="{Binding Patient.MedicalHistory}"
+                               Style="{StaticResource BodyLabel}"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Insurance Information -->
+                <Frame Style="{StaticResource CardStyle}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Insurance Information"
+                               Style="{StaticResource SubHeaderLabel}"/>
+                        <Grid ColumnDefinitions="Auto,*" RowSpacing="10">
+                            <Label Grid.Row="0" Grid.Column="0" Text="Provider:" Style="{StaticResource BodyLabel}"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Patient.InsuranceProvider}" Style="{StaticResource BodyLabel}"/>
+                            
+                            <Label Grid.Row="1" Grid.Column="0" Text="Number:" Style="{StaticResource BodyLabel}"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Patient.InsuranceNumber}" Style="{StaticResource BodyLabel}"/>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Emergency Contact -->
+                <Frame Style="{StaticResource CardStyle}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Emergency Contact"
+                               Style="{StaticResource SubHeaderLabel}"/>
+                        <Grid ColumnDefinitions="Auto,*" RowSpacing="10">
+                            <Label Grid.Row="0" Grid.Column="0" Text="Name:" Style="{StaticResource BodyLabel}"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Patient.EmergencyContact}" Style="{StaticResource BodyLabel}"/>
+                            
+                            <Label Grid.Row="1" Grid.Column="0" Text="Phone:" Style="{StaticResource BodyLabel}"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Patient.EmergencyContactPhone}" Style="{StaticResource BodyLabel}"/>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Quick Actions -->
+                <Frame Style="{StaticResource CardStyle}">
+                    <HorizontalStackLayout Spacing="10">
+                        <Button Text="New Appointment"
+                                Command="{Binding NewAppointmentCommand}"
+                                Style="{StaticResource PrimaryButton}"/>
+                        <Button Text="New Order"
+                                Command="{Binding NewOrderCommand}"
+                                Style="{StaticResource SecondaryButton}"/>
+                        <Button Text="Export Records"
+                                Command="{Binding ExportRecordsCommand}"
+                                Style="{StaticResource TextButton}"/>
+                    </HorizontalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage> 

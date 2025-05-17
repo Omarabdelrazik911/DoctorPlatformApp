@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/omarabdelrazik/Downloads/DoctorDashboardApp/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/Entitlements.xcent /Users/omarabdelrazik/Downloads/DoctorDashboardApp/bin/Debug/net8.0-maccatalyst/maccatalyst-x64/DoctorDashboardApp.app

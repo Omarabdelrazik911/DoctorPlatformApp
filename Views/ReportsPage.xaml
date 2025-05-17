@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoctorDashboardApp.Views.ReportsPage"
+             Title="Reports"
+             BackgroundColor="{StaticResource Gray100}">
+    <Grid RowDefinitions="Auto,*" Padding="20">
+        <Label Text="Reports" Style="{StaticResource HeaderLabel}"/>
+        <Label Grid.Row="1" 
+               Text="Reports functionality coming soon..."
+               Style="{StaticResource BodyLabel}"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+    </Grid>
+</ContentPage> 

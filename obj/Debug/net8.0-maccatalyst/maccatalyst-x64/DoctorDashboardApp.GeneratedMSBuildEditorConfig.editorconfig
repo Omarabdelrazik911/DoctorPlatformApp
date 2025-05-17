@@ -1,0 +1,113 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DoctorDashboardApp
+build_property.ProjectDir = /Users/omarabdelrazik/Downloads/DoctorDashboardApp/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/Views/AppointmentsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.Views.AppointmentsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/AppointmentsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/AppointmentsPage.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/Views/CPOEPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.Views.CPOEPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/CPOEPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/CPOEPage.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/Views/DashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.Views.DashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/DashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/DashboardPage.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/Views/DocumentsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.Views.DocumentsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/DocumentsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/DocumentsPage.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/Views/ExportCenterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.Views.ExportCenterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ExportCenterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ExportCenterPage.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/LoginPage.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/Views/PatientDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.Views.PatientDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/PatientDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/PatientDetailsPage.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/Views/PatientRecordsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.Views.PatientRecordsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/PatientRecordsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/PatientRecordsPage.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/Views/PatientsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.Views.PatientsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/PatientsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/PatientsPage.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/Views/ReportsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.Views.ReportsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ReportsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ReportsPage.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/Views/TestResultsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.Views.TestResultsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/TestResultsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/TestResultsPage.xaml
+
+[/Users/omarabdelrazik/Downloads/DoctorDashboardApp/Views/TreatmentPlansPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DoctorDashboardApp.Views.TreatmentPlansPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/TreatmentPlansPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/TreatmentPlansPage.xaml

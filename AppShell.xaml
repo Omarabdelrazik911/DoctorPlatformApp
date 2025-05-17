@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="DoctorDashboardApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DoctorDashboardApp.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="Login" />
+
+    <TabBar Route="MainTabs">
+        <Tab Title="Dashboard" Icon="dashboard.png">
+            <ShellContent
+                Title="Dashboard"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+        </Tab>
+        
+        <Tab Title="Patients" Icon="patients.png">
+            <ShellContent
+                Title="Patients"
+                ContentTemplate="{DataTemplate local:PatientsPage}"
+                Route="PatientsPage" />
+        </Tab>
+        
+        <Tab Title="Appointments" Icon="calendar.png">
+            <ShellContent
+                Title="Appointments"
+                ContentTemplate="{DataTemplate local:AppointmentsPage}"
+                Route="AppointmentsPage" />
+        </Tab>
+        
+        <Tab Title="Reports" Icon="reports.png">
+            <ShellContent
+                Title="Reports"
+                ContentTemplate="{DataTemplate local:ReportsPage}"
+                Route="ReportsPage" />
+        </Tab>
+    </TabBar>
+</Shell>

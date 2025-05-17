@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoctorDashboardApp.Views.LoginPage"
+             BackgroundColor="{StaticResource Gray100}">
+
+    <Grid RowDefinitions="*,Auto,*">
+        <Frame Grid.Row="1" Style="{StaticResource CardStyle}"
+               Margin="20" MaxWidthRequest="400">
+            <VerticalStackLayout Spacing="20" Padding="20">
+                <Label Text="Doctor Dashboard" Style="{StaticResource HeaderLabel}"
+                       HorizontalOptions="Center"/>
+                
+                <Image Source="doctor_logo.png" HeightRequest="120"
+                       HorizontalOptions="Center"/>
+                
+                <Entry x:Name="UsernameEntry" 
+                       Placeholder="Username"
+                       Style="{StaticResource DefaultEntry}"/>
+                
+                <Entry x:Name="PasswordEntry" 
+                       Placeholder="Password"
+                       IsPassword="True"
+                       Style="{StaticResource DefaultEntry}"/>
+                
+                <Button Text="Login" 
+                        Clicked="OnLoginClicked"
+                        Style="{StaticResource PrimaryButton}"/>
+                
+                <Label x:Name="MessageLabel" 
+                       TextColor="{StaticResource Secondary}"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

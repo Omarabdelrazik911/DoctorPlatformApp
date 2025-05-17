@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoctorDashboardApp.Views.DashboardPage"
+             Title="Dashboard">
+
+    <ScrollView>
+        <Grid RowDefinitions="Auto,*"
+              RowSpacing="20"
+              Padding="20">
+
+            <!-- Welcome Section -->
+            <VerticalStackLayout Grid.Row="0" Spacing="10">
+                <Label Text="{Binding WelcomeMessage}"
+                       FontSize="24"
+                       FontAttributes="Bold"/>
+                <Label Text="{Binding CurrentDate}"
+                       FontSize="16"
+                       TextColor="Gray"/>
+            </VerticalStackLayout>
+
+            <!-- Dashboard Cards -->
+            <Grid Grid.Row="1"
+                  ColumnDefinitions="*,*"
+                  RowDefinitions="Auto,Auto,Auto"
+                  ColumnSpacing="20"
+                  RowSpacing="20">
+
+                <!-- Today's Appointments Card -->
+                <Frame Grid.Row="0" Grid.Column="0"
+                       BorderColor="LightGray"
+                       CornerRadius="10"
+                       Padding="15">
+                    <VerticalStackLayout>
+                        <Label Text="Today's Appointments"
+                               FontSize="18"
+                               FontAttributes="Bold"/>
+                        <Label Text="{Binding TodayAppointmentsCount}"
+                               FontSize="32"
+                               TextColor="#4CAF50"/>
+                        <Button Text="View All"
+                                Command="{Binding ViewAppointmentsCommand}"
+                                Style="{StaticResource TextButton}"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Pending Orders Card -->
+                <Frame Grid.Row="0" Grid.Column="1"
+                       BorderColor="LightGray"
+                       CornerRadius="10"
+                       Padding="15">
+                    <VerticalStackLayout>
+                        <Label Text="Pending Orders"
+                               FontSize="18"
+                               FontAttributes="Bold"/>
+                        <Label Text="{Binding PendingOrdersCount}"
+                               FontSize="32"
+                               TextColor="#FF9800"/>
+                        <Button Text="View All"
+                                Command="{Binding ViewOrdersCommand}"
+                                Style="{StaticResource TextButton}"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Recent Patients Card -->
+                <Frame Grid.Row="1" Grid.Column="0"
+                       BorderColor="LightGray"
+                       CornerRadius="10"
+                       Padding="15">
+                    <VerticalStackLayout>
+                        <Label Text="Recent Patients"
+                               FontSize="18"
+                               FontAttributes="Bold"/>
+                        <CollectionView ItemsSource="{Binding RecentPatients}"
+                                      HeightRequest="150">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Padding="0,5">
+                                        <Label Text="{Binding FullName}"
+                                               FontSize="16"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Test Results Card -->
+                <Frame Grid.Row="1" Grid.Column="1"
+                       BorderColor="LightGray"
+                       CornerRadius="10"
+                       Padding="15">
+                    <VerticalStackLayout>
+                        <Label Text="New Test Results"
+                               FontSize="18"
+                               FontAttributes="Bold"/>
+                        <Label Text="{Binding NewTestResultsCount}"
+                               FontSize="32"
+                               TextColor="#2196F3"/>
+                        <Button Text="View All"
+                                Command="{Binding ViewTestResultsCommand}"
+                                Style="{StaticResource TextButton}"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Quick Actions Card -->
+                <Frame Grid.Row="2" Grid.ColumnSpan="2"
+                       BorderColor="LightGray"
+                       CornerRadius="10"
+                       Padding="15">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Quick Actions"
+                               FontSize="18"
+                               FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="10">
+                            <Button Text="New Patient"
+                                    Command="{Binding NewPatientCommand}"
+                                    HorizontalOptions="FillAndExpand"/>
+                            <Button Text="New Appointment"
+                                    Command="{Binding NewAppointmentCommand}"
+                                    HorizontalOptions="FillAndExpand"/>
+                            <Button Text="New Order"
+                                    Command="{Binding NewOrderCommand}"
+                                    HorizontalOptions="FillAndExpand"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Frame>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage> 

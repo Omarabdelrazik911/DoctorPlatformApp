@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoctorDashboardApp.Views.PatientsPage"
+             Title="Patients"
+             BackgroundColor="{StaticResource Gray100}">
+
+    <Grid RowDefinitions="Auto,*" Padding="20">
+        <!-- Header -->
+        <Grid ColumnDefinitions="*,Auto" Margin="0,0,0,20">
+            <Label Text="Patients" Style="{StaticResource HeaderLabel}"/>
+            <Button Grid.Column="1" 
+                    Text="Add Patient" 
+                    Style="{StaticResource PrimaryButton}"/>
+        </Grid>
+
+        <!-- Patient List -->
+        <ScrollView Grid.Row="1">
+            <CollectionView x:Name="PatientsCollection">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Style="{StaticResource CardStyle}" 
+                               Margin="0,0,0,15">
+                            <Grid ColumnDefinitions="Auto,*,Auto">
+                                <Ellipse Fill="{StaticResource Gray200}"
+                                        HeightRequest="50" 
+                                        WidthRequest="50"/>
+                                
+                                <VerticalStackLayout Grid.Column="1" 
+                                                   Padding="15,0">
+                                    <Label Text="{Binding Name}" 
+                                           Style="{StaticResource SubHeaderLabel}"/>
+                                    <Label Text="{Binding LastVisit}" 
+                                           Style="{StaticResource BodyLabel}"/>
+                                </VerticalStackLayout>
+
+                                <Button Grid.Column="2" 
+                                        Text="View Details"
+                                        Style="{StaticResource SecondaryButton}"/>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+    </Grid>
+</ContentPage> 
